@@ -1,11 +1,8 @@
-// function Place (city,state) {
-//   this.city = city;
-//   this.state = state;
-// }
+function Place (city,state) {
+  this.city = city;
+  this.state = state;
+}
 
-
-function Contact(firstName,lastName) {
-  this.firstName = firstName;
-  this.lastName = lastName;
-  this.addresses = [];
+Place.prototype.cityState = function() {
+  return this.city + ", " + this.state;
 }
